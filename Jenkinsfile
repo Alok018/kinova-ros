@@ -1,7 +1,6 @@
 CODE_CHANGES = getGitCHANGES()
 pipeline {
     agent any
-
     stages {
         stage('Build') {
           when {
