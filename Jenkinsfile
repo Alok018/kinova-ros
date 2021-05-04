@@ -16,10 +16,10 @@ pipeline {
                 echo 'Deploying the master branch....'
             }
         }
-        post {
-        always {
-            emailext body: 'A Test EMail', recipientProviders: [[$class: 'DevelopersRecipientProvider'], [$class: 'RequesterRecipientProvider']], subject: 'Test'
-               }
-         }
+        stage('Email Notification') {
+          mail bcc: '', body: '''Hi 
+          Email has successfully  sent
+          Thanks''', cc: '', from: '', replyTo: '', subject: 'Jenkins Job', to: 'alok.natheee@gmail.com'
+            }
     }
 }
