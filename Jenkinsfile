@@ -17,9 +17,12 @@ pipeline {
             }
         }
         stage('Email Notification') {
-          mail bcc: '', body: '''Hi 
-          Email has successfully  sent
-          Thanks''', cc: '', from: '', replyTo: '', subject: 'Jenkins Job', to: 'alok.natheee@gmail.com'
+             steps {
+                echo 'Sending email notification....'
+                  mail bcc: '', body: '''Hi 
+                  Email has successfully  sent
+                  Thanks''', cc: '', from: '', replyTo: '', subject: 'Jenkins Job', to: 'alok.natheee@gmail.com'
             }
+        }
     }
 }
