@@ -19,10 +19,10 @@ pipeline {
         stage('Email Notification') {
              steps {
                 echo 'Sending email notification....'
-                  mail bcc: '', body: '''Hi 
-                  Email has successfully  sent
-                  Thanks''', cc: '', from: '', replyTo: '', subject: 'Jenkins Job', to: 'alok.natheee@gmail.com'
             }
+             mail bcc: '', body: '''Hi 
+             Email has successfully  sent
+             Thanks''', cc: '', from: '', replyTo: '', subject: 'Jenkins Job', to: 'alok.natheee@gmail.com'
         }
     }
 }
