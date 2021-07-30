@@ -1,4 +1,4 @@
-http://localhost:8080/buildStatus/icon?job=Kinova-ros
+http://localhost:8080/job/Kinova-ros/badge/icon
 
 # Table of Contents 
 - [Important](#important) 
