@@ -1,4 +1,4 @@
-http://localhost:8080/buildStatus/icon?job=Kinova-ros
+[![Build Status](http://localhost:8080/buildStatus/icon?job=Kinova-ros)](http://localhost:8080/job/Kinova-ros/)
 # Table of Contents 
 - [Important](#important) 
 - [Kinova-ROS](#kinova-ros)
